@@ -6,12 +6,17 @@
 </head>
 <body>
 <script>
+    let sout;
+    sout = "<table border='1' width='300' cellspacing='0' cellpadding='9'>"
    let i,j;
    for (i=2; i<=9; i++){
+       sout = sout + "<tr>";
        for (j=1; j<=9; j++){
-           document.write(i + 'x'+ j +'='+(i*j));
-       }
+           sout = sout + "<td>"+ j + "x"+ i + "="+ (i*j)+"</td>";
+       } sout = sout + "<tr>";
    }
+   sout = sout + "</table>";
+   document.write(sout);
 </script>
 </body>
 </html>
